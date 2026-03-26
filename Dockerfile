@@ -32,7 +32,7 @@ COPY --from=frontend-builder /frontend/.next/static ./.next/static
 # ── Supervisord config ────────────────────────────────────────────────────────
 COPY supervisord.conf /etc/supervisord.conf
 
-EXPOSE 3000 8000
+EXPOSE 7860 8000
 
 ENV NODE_ENV=production
 
