@@ -27,7 +27,6 @@ COPY backend/ ./
 WORKDIR /app/frontend
 COPY --from=frontend-builder /frontend/.next/standalone ./
 COPY --from=frontend-builder /frontend/.next/static ./.next/static
-COPY --from=frontend-builder /frontend/public ./public
 
 # ── Supervisord config ────────────────────────────────────────────────────────
 COPY supervisord.conf /etc/supervisord.conf
