@@ -4,6 +4,7 @@ WORKDIR /frontend
 COPY frontend/package.json ./
 RUN npm install
 COPY frontend/ ./
+RUN mkdir -p /frontend/public
 RUN npm run build
 
 # ── Stage 2: combined runtime ─────────────────────────────────────────────────
