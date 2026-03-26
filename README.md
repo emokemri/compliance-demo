@@ -1,4 +1,14 @@
-# Compliance Copilot — EU AI Act
+---
+title: Compliance Demo
+emoji: ⚖️
+colorFrom: purple
+colorTo: teal
+sdk: docker
+pinned: false
+---
+
+# Compliance Copilot
+EU AI Act compliance automation demo.
 
 An AI-powered compliance automation tool that maps AI system descriptions to EU AI Act obligations, generates structured audit checklists, and produces draft Declaration of Conformity reports.
 
