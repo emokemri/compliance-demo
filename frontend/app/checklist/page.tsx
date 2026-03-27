@@ -56,7 +56,7 @@ export default function ChecklistPage() {
     setError(null);
     setGenerating(true);
     try {
-      const res = await fetch("http://localhost:8000/api/report", {
+      const res = await fetch("/api/report", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

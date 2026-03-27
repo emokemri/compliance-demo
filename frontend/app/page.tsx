@@ -42,7 +42,7 @@ export default function UploadPage() {
 
     try {
       setProgress("Mapping obligations to EU AI Act articles…");
-      const res = await fetch("http://localhost:8000/api/analyse", {
+      const res = await fetch("/api/analyse", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text }),
